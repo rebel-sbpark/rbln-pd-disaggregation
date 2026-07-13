@@ -1,0 +1,32 @@
+# Compiled RBLN model artifacts (GBs) — never commit
+models/
+*.rbln
+
+# Raw experiment dumps / logs / traces
+logs/
+results/*/
+*.log
+*.perfetto
+*.trace
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Point-in-time backups the workflow makes (kept out of git history)
+*.pre_*
+*.orig_preCPtest
+*.bak
+
+# Big binaries / study clones / decks (not source)
+vllm-study/
+*.pptx
+scratch_artifact/
+baseline/
+
+.DS_Store
+
+# dist/ tarballs ARE committed (they are the deliverables) — do not ignore them.
